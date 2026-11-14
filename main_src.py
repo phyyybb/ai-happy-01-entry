@@ -11,4 +11,4 @@ src = Path(__file__).with_name("entry.png")
 size = src.stat().st_size
 if size > 1024 * 1024:
     raise SystemExit("entry.png exceeds the 1 MiB gate")
-shutil.copyfile(src, OUTPUT_DIR / "entry.png")
+shutil.copyfile(src, OUTPUT_DIR / "entry.png")  # two runs write identical bytes
