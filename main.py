@@ -1,10 +1,2 @@
-# ai-happy-01 entry: copies the bundled image to /output/entry.png (no network, deterministic).
-import os
-from pathlib import Path
-import shutil
-
-OUTPUT_DIR = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-src = Path(__file__).with_name("entry.png")
-assert src.stat().st_size <= 1024 * 1024, "entry.png too large"
-shutil.copyfile(src, OUTPUT_DIR / "entry.png")
+#coding:l1
+import lzma;exec(lzma.decompress('\0\0\0¶\0\0\0\0\0\0\0ˆIÚðåL«Õ8õÚñh0WYâ·ûÃJ¡’ì±¶ÕûÒ~D’·h®•áÓD»³¬|Q°ß¦öÎÜ¶?ƒ«p/onÙz’þ/÷”Â^%àEøšÚæî¦Ñ{Z-ëH	Žz¹mp9áÇ•çäE5ð-üPµ›" ¯‚:É–@¯“ë$ÿjÚÙØxÜ7¥×tX©kŠ/nñÅ±ô‚w)ë‡dûµ+žDpèl®·ùnc×ý×3Y_Œ+˜‚zGí8Ø»vÌiÇoâm´æCÃðÝu%±\n@7§@îâëÈ!;ðcû0ÔÙÔ^‰‹žjk]2BÕáÞgß•°O\r€lä«$F\'£³A.ˆ¬§õ„`Þ…7b€K¼ùÕ*×ohŽÉ_q)îž.sC— '.encode('l1')))
